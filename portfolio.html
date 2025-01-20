@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithick| Portfolio</title>
+    <style>
+        /* Global Styling */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #f5f5f5;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+            margin: 10px 0;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #fff, #b3b3b3);
+            display: block;
+            margin-top: 8px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile-img {
+            flex: 1 1 250px;
+            max-width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            overflow: hidden;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .about-details {
+            flex: 2 1 500px;
+        }
+
+        .about-details p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #d9d9d9;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .achievement-card {
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .achievement-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #f5f5f5;
+        }
+
+        .achievement-card p {
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        /* Footer Section */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1a1a1a;
+            border-top: 3px solid #fff;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Button Hover Effect */
+        a:hover {
+            color: #b3b3b3;
+            transition: color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HRITHICK</h1>
+        <p>Sri Eshwar College of Engineering | Electronics Enthusiast | Innovator</p>
+    </header>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-img">
+                <img src ="Hr.jpg">
+            </div>
+            <div class="about-details">
+                <p>Hello! I’m HRITHICK, a second-year ECE student at Sri Eshwar College of Engineering. I thrive on exploring cutting-edge technology and creating impactful projects. </p>
+                <p>I completed my schooling at SBKV Matric Hr Sec School with an impressive 94.5% in my 12th board exams. Currently, I hold a CGPA of 8.6 in my semester exams.</p>
+                <p>My passion for innovation drives me to excel academically and professionally. Feel free to connect with me!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <div class="achievement-card">
+                <h3>Machine Learning</h3>
+                <p>Developed an ML model for emotion recognition.</p>
+            </div>
+            <div class="achievement-card">
+                <h3>Java Projects</h3>
+                <p>Completed various dynamic projects like e-commerce and enrollment systems.</p>
+            </div>
+            <div class="achievement-card">
+                <h3>Top Grades</h3>
+                <p>Consistently achieved academic excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Contact: <a href="tel:+919442141322">+91 94421 41322</a> | Email: <a href="mailto:hrithick2503@gmail.com">hrithick2503@gmail.com</a></p>
+        <p>&copy; 2025 HRITHICK</p>
+    </footer>
+</body>
+</html>
